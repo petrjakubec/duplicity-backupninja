@@ -101,11 +101,13 @@ unset FTP_PASSWORD
 ```
 3] obnovit uspesnout obnovu
 #### divne funguje (soubor veros se neobnovil, ale vsechny soubory se obnovili)
+```
 export PASSPHRASE=xxx
 export FTP_PASSWORD=zzz
 duplicity restore ftp://ftp:changeme@ftp.gpx.cz/var/ /var/backups/mysql/sqldump/
 unset PASSPHRASE
 unset FTP_PASSWORD
+```
 ```
 duplicity-testing:/var/backups/mysql/sqldump
 (0) # duplicity restore ftp://ftp:changeme@ftp.gpx.cz/var/ /var/backups/mysql/sqldump/
@@ -136,7 +138,7 @@ unset FTP_PASSWORD
 ```
 export PASSPHRASE=xxx
 export FTP_PASSWORD=zzz
-duplicity list-current-files ftp://ftp:changeme@ftp.gpx.cz/var
+duplicity /var/backups/mysql/sqldump ftp://ftp:changeme@ftp.gpx.cz/var
 unset PASSPHRASE
 unset FTP_PASSWORD
 echo Success
