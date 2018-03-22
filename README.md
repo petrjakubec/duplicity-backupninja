@@ -120,8 +120,8 @@ information_schema.sql  mysql.sql  performance_schema.sql  test.sql  veros.sql
 ```
 4] List Archived Files
 ```
-export PASSPHRASE=hellisreal
-export FTP_PASSWORD=changeme
+export PASSPHRASE=xxx
+export FTP_PASSWORD=zzz
 duplicity list-current-files ftp://ftp:changeme@ftp.gpx.cz/var
 unset PASSPHRASE
 unset FTP_PASSWORD
@@ -133,8 +133,8 @@ unset FTP_PASSWORD
 
 ### backup.sh # contains this:
 ```
-export PASSPHRASE=hellisreal
-export FTP_PASSWORD=changeme
+export PASSPHRASE=xxx
+export FTP_PASSWORD=zzz
 duplicity list-current-files ftp://ftp:changeme@ftp.gpx.cz/var
 unset PASSPHRASE
 unset FTP_PASSWORD
