@@ -1,6 +1,7 @@
 # duplicity-backupninja
 
-Successful backup
+## Successful backup
+
 Check if backup was successful on backupninja
 You can look for "Debug" and "Info" words in /var/log/backupninja.log
 Everything else would be a problem.
