@@ -10,12 +10,14 @@ OR
 
 Wrap backup script/s by function 
 https://serverfault.com/questions/135299/best-tool-for-monitoring-backups-etc-and-trending-statstics-from-that-data/137283
+```
 function handle {
         echo Error
         error problem occured
 }
 set -e
 trap handle ERR
+```
 ```
 ssh root@51.15.196.175
 ```
