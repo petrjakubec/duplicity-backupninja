@@ -128,7 +128,7 @@ unset FTP_PASSWORD
 ```
 5] Automating Duplicity
 ```
-0 0 * * * /root/scripts/backup.sh >> /var/log/duplicity/etc.log
+0 0 * * * /root/scripts/backup.sh >> /var/log/duplicity/etc.log 2>&1
 ```
 
 ### backup.sh # contains this:
